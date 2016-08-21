@@ -12,7 +12,7 @@ public class Main {
         if (args.length != 3) {
             logger.log(
                 String.format(
-                    "arg length incorrect. Expected 3 got %d. List:",
+                    "arg length incorrect. Expected 3 got %d. List: %s",
                     args.length,
                     Utils.join(args, "|")));
             return;
