@@ -1,0 +1,20 @@
+java_library(
+  name='cli',
+  srcs=['Main.java'],
+  deps=[
+    '//src/com/dsyang/calculator:calculator',
+    '//src/com/dsyang/logger:logger',
+    '//src/com/dsyang/utils:utils',
+  ],
+  visibility=[
+    '//src/com/dsyang/cli:bin'
+  ],
+)
+
+java_binary(
+  name='bin',
+  deps=[
+    ':cli',
+  ],
+  main_class='com.dsyang.cli.Main',
+)

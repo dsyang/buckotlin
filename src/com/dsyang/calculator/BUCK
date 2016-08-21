@@ -1,0 +1,9 @@
+kotlin_library(
+  name='calculator',
+  srcs=['Calculator.kt'],
+  deps=[
+    '//src/com/dsyang/utils:adts',
+    '//libs/kotlinc/lib:runtime',
+  ],
+  visibility=['PUBLIC'],
+)

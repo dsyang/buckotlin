@@ -1,0 +1,11 @@
+kotlin_library(
+  name='logger',
+  srcs=[
+    'Logger.kt',
+    'DefaultLogger.kt',
+  ],
+  deps=[
+    '//libs/kotlinc/lib:runtime',
+  ],
+  visibility=['PUBLIC']
+)
